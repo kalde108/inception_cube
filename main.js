@@ -48,7 +48,7 @@ class ThreeJSTemplate {
     const ambientLight = new THREE.AmbientLight(0x505050);
     const directionalLight = new THREE.DirectionalLight(0xffffff, 0.75);
     const hemisphereLight = new THREE.HemisphereLight(0x59c9f3, 0xeea3b2, 0.75);
-    const pointLight = new THREE.PointLight(0x00ff00, 1, 100);
+    const pointLight = new THREE.PointLight(0x00ff00, 0.5, 100);
     pointLight.position.set(0, 3, 4);
 
     this.scene.add(ambientLight, directionalLight, hemisphereLight, pointLight);
