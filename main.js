@@ -45,7 +45,7 @@ class ThreeJSTemplate {
   }
 
   initLights() {
-    const ambientLight = new THREE.AmbientLight(0xffffff);
+    const ambientLight = new THREE.AmbientLight(0x505050);
     const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
     const hemisphereLight = new THREE.HemisphereLight(0x59c9f3, 0xeea3b2, 0.5);
     const pointLight = new THREE.PointLight(0x59c9f3, 1, 100);
