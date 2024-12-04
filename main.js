@@ -48,7 +48,7 @@ class ThreeJSTemplate {
     const ambientLight = new THREE.AmbientLight(0xffffff);
     const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
     const hemisphereLight = new THREE.HemisphereLight(0x59c9f3, 0xeea3b2, 0.5);
-    const pointLight = new THREE.PointLight(0xffffff, 1, 100);
+    const pointLight = new THREE.PointLight(0x59c9f3, 1, 100);
     pointLight.position.set(0, 3, 4);
 
     this.scene.add(ambientLight, directionalLight, hemisphereLight, pointLight);
@@ -56,7 +56,7 @@ class ThreeJSTemplate {
 
   initMesh() {
     const geometry = new THREE.BoxGeometry(1, 1, 1);
-    const material = new THREE.MeshStandardMaterial({ color: "#ffffff" });
+    const material = new THREE.MeshStandardMaterial({ color: "#eeffee" });
     this.mesh = new THREE.Mesh(geometry, material);
     this.scene.add(this.mesh);
   }
